@@ -13,8 +13,17 @@ const { register, login } = require('./utils/UserUtil')
 app.post('/register', register); 
 app.post('/login', login); 
 
-const { viewResources } = require('./utils/ResourceUtil')
+const { viewResources, addResource } = require('./utils/ResourceUtil') 
 app.get('/view-resources', viewResources); 
+app.post('/add-resource', addResource); 
+
+// <<<<<<< view-resources
+// const { viewResources } = require('./utils/ResourceUtil')
+// app.get('/view-resources', viewResources); 
+// =======
+// const { addResource } = require('./utils/ResourceUtil') 
+// app.post('/add-resource', addResource);
+// >>>>>>> main
 
 app.get('/', (req, res) => {
     res.sendFile(__dirname + "/public/" + startPage);
