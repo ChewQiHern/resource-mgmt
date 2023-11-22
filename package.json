@@ -6,7 +6,6 @@
   "nyc": {
     "include": [
       "utils/UserUtil.js",
-      "utils/ResourceUtil.js",
       "index.js"
     ],
     "exclude": [],

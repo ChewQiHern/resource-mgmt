@@ -19,7 +19,7 @@ app.post('/add-resource', addResource);
 
 // <<<<<<< view-resources
 // const { viewResources } = require('./utils/ResourceUtil')
-// app.get('/view-resources', viewResources); 
+// app.get('/view-resoucrces', viewResources); 
 // =======
 // const { addResource } = require('./utils/ResourceUtil') 
 // app.post('/add-resource', addResource);
