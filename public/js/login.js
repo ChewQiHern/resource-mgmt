@@ -14,6 +14,7 @@ function login() {
     request.open("POST", "/login", true);
     request.setRequestHeader('Content-Type', 'application/json');
     request.onload = function () {
+        console.log(request.responseText);
         response = JSON.parse(request.responseText);
         console.log(response)
         if (response.message == "Login successful!") {
