@@ -26,6 +26,7 @@ function viewResources() {
         document.getElementById('tableContent').innerHTML = html;
     };
     request.send();
+}
 
 function addResource() {
     var response = "";
