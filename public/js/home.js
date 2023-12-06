@@ -56,7 +56,8 @@ function addResource() {
             window.location.href = 'home.html';
         }
         else {
-            document.getElementById("message").innerHTML = 'Unable to add resource!'; document.getElementById("message").setAttribute("class", "textdanger");
+            document.getElementById("message").innerHTML = 'Unable to add resource!'; 
+            document.getElementById("message").setAttribute("class", "text-danger");
             document.getElementById("message").setAttribute("class", "text-danger");
         }
     };
